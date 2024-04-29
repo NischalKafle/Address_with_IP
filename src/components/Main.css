@@ -1,0 +1,142 @@
+
+.container {
+   
+  }
+  
+  .map-container{
+    marginBottom: 10px;
+  }
+  .search-form {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    margin-top: 60px;
+    justify-content: center;
+  }
+  
+  .search-input {
+    width: 450px;
+    height:50px;
+    border: 0;
+  }
+  
+  .search-button {
+    width: 90px;
+    height:50px; 
+    border: 0;
+    background: #fff;
+  }
+
+  .search-button > .search-fill-color {
+    color: #000;
+  }
+
+  .search-button:disabled{
+    background: #fff;
+    border: 0;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .location-info {
+    color: white;
+  }
+
+  .result{
+    padding-top: 20px;
+  }
+
+  .card {
+    max-width: 450px;
+    margin: 60px auto;
+    font-weight: 700;
+  }
+
+  #map{
+    margin-bottom:10px;
+  }
+  @media only screen and (max-width: 768px) {
+    .search-input {
+      width: 80%;
+    }
+    .search-form{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+    .search-button {
+      width: 80%;
+      margin-top: 10px;
+    }
+    
+    .card {
+      max-width: 65%;
+      margin:  60px auto;
+      align-items:center;
+    }
+    .list-group{
+      width:100%;
+      padding:10px;
+    }
+    .list-group-item{
+      width:100%;
+      padding:5px;
+    }
+    .list-group-flush{
+      width:100%;
+    }
+    #map {
+      margin-top: 10px;
+      height: 300px;
+      width:400px;
+      align-items:center;
+    }
+  }
+
+
+  @media (min-width: 769px) and (max-width: 991px){
+    .card {
+      margin: 60px auto;
+    }
+  }
+  
+
+  @media only screen and (max-width: 480px) {
+    .search-form {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 60px;
+    }
+    
+    .search-input {
+      width: 60%;
+      height:50px;
+     
+    }
+    
+    .search-button {
+      width: 60%;
+      margin-top: 10px;
+     
+    }
+    
+    .card {
+      margin:  60px auto;
+      font-weight: 700;
+    }
+    
+    #map .map-container {
+      margin-top: 10px;
+      height: 350px;
+      margin-bottom: 30px !important;
+    }
+  
+  }
+    
+  .search-button.disabled {
+    opacity: 0.5;
+    cursor: allowed;
+  }
+    
